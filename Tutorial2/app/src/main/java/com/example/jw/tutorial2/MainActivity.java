@@ -1,10 +1,13 @@
 package com.example.jw.tutorial2;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -45,5 +48,24 @@ public class MainActivity extends AppCompatActivity {
         float n2 = Float.parseFloat(number2.getText().toString());
         result.setText(Float.toString(n1 / n2));
     }
+    public void sayHelloClick(View v){
+        Toast.makeText(this, "안녕하세요", Toast.LENGTH_LONG).show();
 
+    }
+
+    public void webPageClicked(View v){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://m.naver.com"));
+        startActivity(intent);
+    }
+
+    public void phoneCallClick(View v){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:010-1000-0100"));
+        startActivity(intent);
+    }
+    public void onButtonClick(View v){
+        Toast.makeText(this, "다음화면으로넘어갑니다",Toast.LENGTH_LONG).show();
+
+        Intent intent = new Intent(this, menuActivity.class);
+        startActivity(intent);
+    }
 }
