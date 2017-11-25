@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".menuActivity"></activity>
+        <activity android:name=".menuActivity" />
+        <activity android:name=".MylinearLayout"></activity>
     </application>
 
 </manifest>

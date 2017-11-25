@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:010-1000-0100"));
         startActivity(intent);
     }
-    public void onButtonClick(View v){
+    public void onButtonClicked(View v){
         Toast.makeText(this, "다음화면으로넘어갑니다",Toast.LENGTH_LONG).show();
 
         Intent intent = new Intent(this, menuActivity.class);

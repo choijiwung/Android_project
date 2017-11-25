@@ -13,9 +13,8 @@ public class menuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
     }
 
-    public void onbackButtonClicked(View v){
-        Toast.makeText(this, "전화면으로 돌아갑니다", Toast.LENGTH_LONG.show());
-
+    public void onBackButtonClicked(View v){
+        Toast.makeText(this, "안녕하세요", Toast.LENGTH_LONG).show();
         finish();
     }
 }
