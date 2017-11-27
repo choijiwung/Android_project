@@ -107,8 +107,7 @@ constraint란 버튼을 만들었을때 연결선을 이용하여 버튼의 위�
   - 격자(GIRD) 모델
   - 격자 모양의 배열을 사용하여 화면을 구성하는 방법
   - HTML에서 많이 사용하는 정렬 방식과 유사하지만 많이 사용하지는 않음
-
-#### 마진 (얼마나 떨어져있는지를 정의)
+- 마진 (얼마나 떨어져있는지를 정의)
 
 # view all properties
 
@@ -147,7 +146,7 @@ constraint란 버튼을 만들었을때 연결선을 이용하여 버튼의 위�
         android:text="Button" />
     ```
 
-![](C:\Users\JW\Pictures\캡처.PNG)
+![](do_it_android_photo/캡처.PNG)
 
 
 
@@ -186,7 +185,7 @@ constraint란 버튼을 만들었을때 연결선을 이용하여 버튼의 위�
         android:text="Button" />
 ```
 
-![RelativeLayout](C:\Users\JW\Pictures\RelativeLayout.PNG)
+![RelativeLayout](do_it_android_photo/RelativeLayout.PNG)
 
 이런식으로 구성할 수 있다.
 
@@ -194,13 +193,13 @@ constraint란 버튼을 만들었을때 연결선을 이용하여 버튼의 위�
 
 
 
-# 테이블 레이아웃 사용하기
+# 테이블 레이아웃
 
-  ![Pasted image at 2017_11_25 05_54 PM](C:\Users\JW\Pictures\Pasted image at 2017_11_25 05_54 PM.png)
+  ![Pasted image at 2017_11_25 05_54 PM](do_it_android_photo/Pasted image at 2017_11_25 05_54 PM.png)
 
 테이블레이아웃
 
-![테이블레이아웃](C:\Users\JW\Pictures\테이블레이아웃.PNG)
+![테이블레이아웃](do_it_android_photo/테이블레이아웃.PNG)
 
 코드는 다음과 같다.
 
@@ -256,7 +255,7 @@ constraint란 버튼을 만들었을때 연결선을 이용하여 버튼의 위�
 - 안드로이드는 위젯의 내용이 화면 영역을 벗어나면 스크롤표시가 자동으로 보임
 - 스크롤뷰를 이용해 다른 뷰를 감싸주기만 하면 됨
 
-![스크롤뷰](C:\Users\JW\Pictures\스크롤뷰.png)
+![스크롤뷰](do_it_android_photo/스크롤뷰.png)
 
 
 
@@ -276,7 +275,7 @@ constraint란 버튼을 만들었을때 연결선을 이용하여 버튼의 위�
     </ScrollView>
 ```
 
-![스크롤뷰2](C:\Users\JW\Pictures\스크롤뷰2.PNG)
+![스크롤뷰2](do_it_android_photo/스크롤뷰2.PNG)
 
 - 코드는다음과같다.
 
@@ -324,7 +323,7 @@ constraint란 버튼을 만들었을때 연결선을 이용하여 버튼의 위�
 
 
 
-![프레임레이아웃](C:\Users\JW\Pictures\프레임레이아웃.PNG)
+![프레임레이아웃](do_it_android_photo/프레임레이아웃.PNG)
 
 
 
@@ -338,9 +337,9 @@ constraint란 버튼을 만들었을때 연결선을 이용하여 버튼의 위�
 
 버튼을 누를때마다 화면이 바뀌는 페이지를 만들어보자
 
-![프레임레이아웃1](C:\Users\JW\Pictures\프레임레이아웃1.PNG)
+![프레임레이아웃1](do_it_android_photo/프레임레이아웃1.PNG)
 
-![프레임레이아웃2](C:\Users\JW\Pictures\프레임레이아웃2.PNG)
+![프레임레이아웃2](do_it_android_photo/프레임레이아웃2.PNG)
 
 코드는 다음과 같다
 
@@ -390,13 +389,13 @@ public class MainActivity extends AppCompatActivity {
 
 # 기봇위젯
 
-![기봇위젯설명1](../../../Pictures/기봇위젯설명1.PNG)
+![기봇위젯설명1](do_it_android_photo/기봇위젯설명1.PNG)
 
 - lineSpacingExtra : 줄간격
 
 ### 기본적인 위젯 구성이다.
 
-![기본위젯설명3](../../../Pictures/기본위젯설명3.PNG)
+![기본위젯설명3](do_it_android_photo/기본위젯설명3.PNG)
 
 만약 자바코드에서 버튼에 있는 값을 받고 싶다면 코드는 다음과 같다.
 
