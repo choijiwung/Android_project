@@ -34,7 +34,7 @@ method devideClick를 정의한다는 뜻이다.
 
 이것은 나누기를 하는 예시이다.
 
-```
+```java
    public void devideClick(View v){
         EditText number1 = (EditText) findViewById(R.id.number1);
         EditText number2 = (EditText) findViewById(R.id.number2);
@@ -47,7 +47,7 @@ method devideClick를 정의한다는 뜻이다.
 
 이것은 더하기를 하는 예시이다.
 
-```
+```java
     public void addClick(View v){
     EditText number1 = (EditText) findViewById(R.id.number1);
     EditText number2 = (EditText) findViewById(R.id.number2);
@@ -62,7 +62,7 @@ method devideClick를 정의한다는 뜻이다.
 
 잠깐 보였다가 사라진다.
 
-```
+```java
     public void sayhello(View v){
         Toast.makeText(this, "안녕하세요", Toast.LENGTH_LONG).show();
     }
@@ -70,7 +70,7 @@ method devideClick를 정의한다는 뜻이다.
 
 그리고 버튼이 제위치에 없을때도있는데 다음과 같은 코드를 추가해주고 버튼위치를다시 조절하면 된다.
 
-```
+```java
   	    app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -81,7 +81,7 @@ method devideClick를 정의한다는 뜻이다.
 
 웹페이지 띄우는 코드
 
-```
+```java
     public void webPageClicked(View v){
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://m.naver.com"));
         startActivity(intent);
@@ -129,7 +129,7 @@ constraint란 버튼을 만들었을때 연결선을 이용하여 버튼의 위�
 
 - layout-weight는 남은 영역을 할당해준다.
 
-  - ```
+  - ```java
     #layout- weight 예시
     <Button
         android:id="@+id/button4"
@@ -154,7 +154,7 @@ constraint란 버튼을 만들었을때 연결선을 이용하여 버튼의 위�
 
 # 상대레이아웃 RelativeLayout
 
-```
+```java
  <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
@@ -203,7 +203,7 @@ constraint란 버튼을 만들었을때 연결선을 이용하여 버튼의 위�
 
 코드는 다음과 같다.
 
-```
+```java
 <?xml version="1.0" encoding="utf-8"?>
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
@@ -261,7 +261,7 @@ constraint란 버튼을 만들었을때 연결선을 이용하여 버튼의 위�
 
 - 이런식으로 감싸주면 텍스트뷰의 크기가 커지면 알아서 스크롤이 생성됨
 
-```
+```java
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -279,7 +279,7 @@ constraint란 버튼을 만들었을때 연결선을 이용하여 버튼의 위�
 
 - 코드는다음과같다.
 
-```
+```java
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -343,7 +343,7 @@ constraint란 버튼을 만들었을때 연결선을 이용하여 버튼의 위�
 
 코드는 다음과 같다
 
-```
+```java
 package com.rememberme.myframelayout;
 
 import android.support.v7.app.AppCompatActivity;
@@ -399,7 +399,7 @@ public class MainActivity extends AppCompatActivity {
 
 만약 자바코드에서 버튼에 있는 값을 받고 싶다면 코드는 다음과 같다.
 
-```
+```java
 RadioButton radioButton = (RadioButton) findViewById(R.id.radioButton2);
 RadioButton radioButton1 = (RadioButton) findViewById(R.id.radioButton3);
 ```
