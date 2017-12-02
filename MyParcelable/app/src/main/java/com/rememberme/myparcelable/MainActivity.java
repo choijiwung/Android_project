@@ -25,7 +25,10 @@ public class MainActivity extends AppCompatActivity {
                 names.add("황수연");
 
                 intent.putExtra("names", names);
-                
+//                names 라는 해쉬값을 통해서 names라는 객체를 보내본다.
+
+                SimpleData data = new SimpleData(100, "Hello");
+                intent.putExtra("data", data);
 
 
 
