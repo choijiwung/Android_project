@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     EditText editText;
@@ -29,6 +30,22 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+            Intent passedIntent = getIntent();
+            processCommand(passedIntent);
+    }
 
+    @Override
+    protected void onNewIntent(Intent intent) {
+        processCommand(intent);
+
+        super.onNewIntent(intent);
+    }
+    private void processCommand (Intent intent){
+        if(intent != null){
+            String command = intent.getStringExtra("command");
+            String name = intent.getStringExtra("name");
+
+            Toast.makeText(this, "서비스로부터 받은 메시지" +command +','+ name,Toast.LENGTH_LONG).show();
+        }
     }
 }

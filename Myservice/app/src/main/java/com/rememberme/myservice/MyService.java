@@ -36,6 +36,23 @@ public class MyService extends Service {
         String name = intent.getStringExtra("name");
 
         Log.d(TAG,"전달받은 데이터" + command + name);
+
+        try{
+        Thread.sleep(5000);
+        }catch(Exception e){}
+
+        Intent showIntent = new Intent(getApplicationContext(), MainActivity.class);
+//       MainActivity.class로 보내겠다.
+        showIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|
+                            Intent.FLAG_ACTIVITY_SINGLE_TOP|
+//                화면을 재활용 해달라
+                            Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//                화면이 있으면 없애달라
+        showIntent.putExtra("command","show");
+        showIntent.putExtra("name", name + " from service");
+//      add flag만 하면 문제가 생긴다.
+//
+        startActivity(showIntent);
     }
 
     @Override
