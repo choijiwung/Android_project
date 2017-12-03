@@ -2,8 +2,8 @@ package com.rememberme.mylifecycle;
 
 import android.app.Activity;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -53,7 +53,9 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "onPause 호출", Toast.LENGTH_LONG).show();
 //        보통 onPause 상태에서 파일을 저장을 많이한다. shareReferences
         SharedPreferences pref = getSharedPreferences("pref", Activity.MODE_PRIVATE);
+//        간단한 설정을 저장하는 방법이다.
         SharedPreferences.Editor editor = pref.edit();
+        editor.putString("name", "소녀시대");
         editor.commit();
 
     }
@@ -67,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         if (pref != null){
             String name = pref.getString("name", "");
             Toast.makeText(this, "복구된이름"+ name, Toast.LENGTH_LONG).show();
-            
+
 
         }
     }
