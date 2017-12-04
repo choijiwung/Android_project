@@ -20,15 +20,39 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.082" />
+        app:layout_constraintVertical_bias="0.082"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        />
 
-    <Button
-        android:id="@+id/button4"
+    <EditText
+        android:id="@+id/start_trip_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="시작날짜입력하기"
+        android:ems="10"
+        android:hint="시작날짜"
+        android:inputType="date"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="113dp" />
+        tools:layout_editor_absoluteY="95dp"
+        android:clickable="true"
+        android:editable="false"
+        android:focusable="false"/>
+
+    <EditText
+        android:id="@+id/end_trip_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="끝나는날짜"
+        android:inputType="date"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="145dp"
+        android:clickable="true"
+        android:editable="false"
+        android:focusable="false"/>
 
 </android.support.constraint.ConstraintLayout>
